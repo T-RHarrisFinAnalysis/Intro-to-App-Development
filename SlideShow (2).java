@@ -98,10 +98,11 @@ public class SlideShow extends JFrame {
 
         ImageIcon icon = new ImageIcon(fileName);
 
-        Image scaledImage = icon.getImage().getScaledInstance(
-                700,
-                450,
-                Image.SCALE_SMOOTH);
+        Image scaledImage =
+                icon.getImage().getScaledInstance(
+                        700,
+                        450,
+                        Image.SCALE_SMOOTH);
 
         return new JLabel(new ImageIcon(scaledImage));
     }
@@ -124,19 +125,23 @@ public class SlideShow extends JFrame {
             text = "<html><center><h2>#1 Bali Yoga Retreat</h2>"
                     + "Rejuvenate your mind and body with daily yoga sessions "
                     + "and organic meals in beautiful Bali.</center></html>";
-        } else if (i == 2) {
+        }
+        else if (i == 2) {
             text = "<html><center><h2>#2 Sedona Spa Escape</h2>"
                     + "Relax with world-class spa treatments and scenic desert "
                     + "views in Sedona, Arizona.</center></html>";
-        } else if (i == 3) {
+        }
+        else if (i == 3) {
             text = "<html><center><h2>#3 Costa Rica Wellness Resort</h2>"
                     + "Experience holistic wellness programs including detox "
                     + "diets, meditation, and nature hikes.</center></html>";
-        } else if (i == 4) {
+        }
+        else if (i == 4) {
             text = "<html><center><h2>#4 Thailand Detox Sanctuary</h2>"
                     + "Cleanse your body at a detox sanctuary offering herbal "
                     + "therapies and Thai massages.</center></html>";
-        } else if (i == 5) {
+        }
+        else if (i == 5) {
             text = "<html><center><h2>#5 Iceland Geothermal Spa</h2>"
                     + "Heal in natural hot springs surrounded by stunning "
                     + "Icelandic landscapes.</center></html>";
